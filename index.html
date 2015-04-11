@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Eeshan Kumar</title>
+		    
+		<!-- Stylesheet & Favicon -->
+		<link rel="icon" type="image/png" href="" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet/less" type="text/css" href="style.less" />
+
+		<!-- Javascript libraries -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.velocity.min.js"></script>
+		<script src="js/less.min.js" type="text/javascript"></script>
+	</head>
+
+<body onLoad="javascript:preloader()">
+	<div id="wrap">
+		<!-- Full backgrounds on yin yang clicks -->
+		<div class="background whiteBG"></div>
+		<div class="background blackBG"></div>
+
+		<a href="http://www.eeshankumar.com"><div id="title" class="fontHeader"><div class="bg"></div>Eeshan Kumar</div></a>
+		
+		<div id="contentWrap">
+			<div id="yinyangWrap"> 
+				<!-- Black/White Semi Circle Left/Right -->
+				<a href="#slide1" class="blackAnimate black half quarter_circle top left"></a>
+				<a href="#slide1" class="blackAnimate black half quarter_circle bottom left"></a>
+				<a href="#slide2" class="whiteAnimate white half quarter_circle top right"></a>
+				<a href="#slide2" class="whiteAnimate white half quarter_circle bottom right"></a>
+
+				<!--- Hover Show Black/White Middle wtih Corresponding Circles Inside -->
+				<a href="#slide1" class="black half circle top left25 whiteHoverShow"></a>
+				<a href="#slide2" class="white s15 circle top1875 left4375 whiteHoverShow">
+					<div class="whiteAnimate white circle quad"></div>
+				</a>
+				<a href="#slide2" class="white half circle bottom left25 blackHoverShow"></a>
+				<a href="#slide1" class="black s15 circle bottom1875 left4375 blackHoverShow">
+					<div class="blackAnimate black circle quad"></div>
+				</a>
+
+				<!--- Black/White Middle wtih Corresponding Circles Inside -->
+				<a href="#slide1" class="blackAnimate black half circle top left25 whiteHoverHide"></a>
+				<a href="#slide2" class="white s15 circle top1875 left4375 whiteHoverHide"></a>
+				<a href="#slide2" class="whiteAnimate white half circle bottom left25 blackHoverHide"></a>
+				<a href="#slide1" class="black s15 circle bottom1875 left4375 blackHoverHide"></a>
+				<a href="#slide1" class="black back">Back</a>
+				<a href="#slide2" class="white back">Back</a>
+			</div><!-- #yinyangWrap -->
+
+			<div id="slide1" class="slide blackSlide blackLinks" >
+				<div class="slideContentWrap">
+					<a id="bl2" href="#">Websites</a>
+					<a id="bl1" href="#">Healthcare</a>
+					<a target="_blank" class="icon" href="mailto:me@eeshankumar.com"><img src='images/Email.png' /></a>
+					<a target="_blank" class="icon" href="https://www.linkedin.com/in/eeshankumar"><img src='images/Linkedin.png' /></a>
+				</div><!-- .slideContentWrap -->
+			</div><!-- #slide1 -->
+
+			<div id="slide2" class="slide whiteSlide whiteLinks">
+				<div class="slideContentWrap">
+					<div class="bg"></div>
+					<a id="wl1" href="#">Fly</a>
+					<a id="wl2" href="#">Cook</a>
+					<a target="_blank" class="icon" href="https://www.facebook.com/TheEeshanKumar"><img src='images/Facebook.png' /></a>
+					<a target="_blank" class="icon" href="mailto:me@eeshankumar.com?Subject=It's%20Adventure%20Time"><img src='images/Email.png' /></a>
+				</div><!-- .slideContentWrap -->
+			</div><!-- #slide2 -->
+
+			<div id="slide3" class="slide blackSlide" >
+				<div class="bl1 slideContentWrap">
+					<b style="font-size:150%;">Projects Managed</b>
+					<br/>
+					2012 Upgrade
+					<br/>
+					Provation Implementation
+					<br/>
+					Neurology and Cardiology Optimization
+					<br/>
+					Radiant Implementation
+					<br/>
+					Order Transmittal Redesign
+					<br/><br/>
+					<b style="font-size:150%;">Epic Certifications</b>
+					<br/>
+					EpicCare Ambulatory
+					<br/>
+					Radiant
+					<br/>
+					Beacon
+					<br/>
+					Nurse Triage
+					<br/>
+					MyChart
+					<br/>
+					Proficient with Cache (MUMPS)
+				</div><!-- .slideContentWrap -->
+			</div><!-- #slide3 -->
+
+			<div id="slide4" class="slide blackSlide" >
+				<div class="bl2 slideContentWrap">
+					<b style="font-size:150%;">Client Work</b>
+					<a target="_blank" href="http://www.allied8.com">Allied8</a>
+					<a target="_blank" href="http://www.wynn-assoc.com">Wynn & Associates</a>
+					<a target="_blank" href="http://www.roseleighdesign.com">Rose Leigh Design</a>
+					<br/><br/>
+					<b style="font-size:150%;">Side Projects</b>
+					<a target="_blank" href="http://www.eeshankumar.com/jumpsuits">HTML5 Canvas</a>
+					<a target="_blank" href="http://www.allied8.com/parallax">Parallax (Work in Progress)</a>
+					<br/><br/>
+					<b style="font-size:150%;">Proficient Languages</b>
+					<br/>
+					Javascript
+					<br/>
+					CSS
+					<br/>
+					HTML
+				</div><!-- .slideContentWrap -->
+			</div><!-- #slide4 -->
+
+			<div id="slide5" class="slide whiteSlide" >
+				<div class="wl2 slideContentWrap">
+					<div class="bg"></div>
+					<a target="_blank" href="images/recipes/BeefandVegetableStir-frywithRice.jpg">Beef and Vegetable Stir-fry with Rice</a>
+					<a target="_blank" href="images/recipes/RusticGreekPie.jpg">Rustic Greek Pie</a>
+					<a target="_blank" href="images/recipes/CapresPortobelloMushroomPizza.jpg">Capres Portobello Mushroom Pizza</a>
+					<a target="_blank" href="images/recipes/OrangeandPineNutShrimpwithQuinoa.jpg">Orange and Pine Nut Shrimp with Quinoa</a>
+					<a target="_blank" href="images/recipes/MushroomAsparagusOrzotto.jpg">Mushroom Asparagus Orzotto</a>
+				</div><!-- .slideContentWrap -->
+			</div><!-- #slide5 -->
+			
+		</div><!-- #contentWrap -->
+
+		<div class="wl1 slideContentWrap fly">
+			<a href="#"><img id="flyGif" src='images/fly.gif' /></a>
+		</div><!-- .wl1 .fly .content -->
+
+	</div><!-- #wrap -->
+</body>
+
+<!-- Javascript File -->
+<script type="text/javascript" src="js/app.js"></script>

@@ -1,0 +1,269 @@
+/* Overall site CSS */
+body {margin:0; padding:0;font-family: 'Open Sans';}
+a, a:visited {display:block; text-decoration:none; color:inherit;}
+
+#wrap {
+	/* Overall Background CSS */
+	min-width:1240px;
+	.background {
+		min-width: 1240px;
+		position:absolute;
+		top:0;
+		height:100%;
+		width:100%;
+		z-index:-4;
+		opacity:0;
+		-webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
+	    transition: opacity 1s;
+	}
+	.background.blackBG {background-color:black;}
+	.background.whiteBG {background:url('images/White.png'); background-size:contain;}
+    .bg {
+    	position:absolute;
+    	top:0; bottom:0;
+    	left:0; right:0;
+    	z-index:-1;
+    	opacity:.8;
+		-webkit-transition: color 1s, background-color 1s; /* For Safari 3.1 to 6.0 */
+	    transition: color 1s, background-color 1s;
+    }
+
+	/* Title CSS */
+	#title {
+		text-align: center; 
+		text-transform: uppercase; 
+		font-size:40px; /* See font in responsiveFont in app.js */
+		letter-spacing: 10px; /* See font in responsiveFont in app.js */
+		font-weight:bold; 
+		font-family: 'Open Sans', Arial Black,Arial Bold,Gadget,sans-serif; 
+		width:50%; 
+		margin:10px auto 0;
+		color:black;
+	    border-radius:40px;
+	    overflow:hidden;
+	    position:relative;
+	    .bg {border-radius:40px;}
+	}
+
+	#contentWrap {
+		position:relative;
+		margin-top:2%;
+		font-size:17px;
+		font-weight:bold;
+		letter-spacing: 1px;
+	}
+
+	/* YIN YANG CSS */
+	#yinyangWrap {
+		display:block; 
+		position:absolute; 
+		width:25%; 
+		margin:0 auto; 
+		left:0%; 
+		right:0%;
+		z-index:4;
+	    -webkit-transition: left 1s ease-out;
+	    -moz-transition: left 1s ease-out;
+	    -o-transition: left 1s ease-out;
+	    transition: left 1s ease-out;
+	}
+	#yinyangWrap:before {content:""; display:block; padding-top:100%;}
+	/* Curves */
+	.quarter_circle {z-index:1;}
+	.quarter_circle.top.left {border-radius:100% 0 0 0;}
+	.quarter_circle.top.right {border-radius:0 100% 0 0;}
+	.quarter_circle.bottom.right {border-radius:0 0 100% 0;}
+	.quarter_circle.bottom.left {border-radius:0 0 0 100%;}
+	.circle {z-index:4; border-radius:50%; border:hidden;}
+	
+	/* All positioning */
+	.top, .bottom, .top1875, .bottom1875, .left, .right, .left25, .left4375 {position:absolute;}
+	.top {top:0;}
+	.bottom {top:50%;}
+	.top1875 {top:18.75%;}
+	.bottom1875 {top:68.75%;}
+	.left {left:0;}
+	.right {left:50%;}
+	.left25 {left:25%;}
+	.left4375 {left:43.75%;}
+	.s15 .quad {position:relative; top:-150%; left:-150%;}
+	
+	/* Sizes */
+	.half {width:50%; height:50%;}
+	.s15 {width:12.5%; height:12.5%; overflow:hidden;}
+	.quad {width:400%; height:400%;}
+	
+	/* BACKGROUNDS */
+	/* Quarter Circles - Black/White Halves */
+	#yinyangWrap .quarter_circle.top {background-size:200% 200%; background-position: 0% 0%;}
+	#yinyangWrap .quarter_circle.bottom {background-size:200% 200%; background-position: 0% 100%;}
+
+	/* Hover Hide Half/S15 Circles - Black/White Middle wtih Corresponding Circles Inside */
+	#yinyangWrap .black.circle.top {background-size:200% 200%; background-position: 50% 0%}
+	#yinyangWrap .white.circle.bottom {background-size:200% 200%; background-position:-50% 100%;}
+
+	/* Hover Show Half/S15 Circles - Black/White Middle wtih Corresponding Circles Inside */
+	#yinyangWrap .white.circle.s15 .quad {background-size:200% 200%; background-position:-50% 0;}
+	#yinyangWrap .black.circle.s15 .quad {background-size:200% 200%; background-position:50% 100%;}
+	
+	/* PreHover Effects */
+	.blackHoverHide, .whiteHoverHide {opacity:1;}
+	.blackHoverShow, .whiteHoverShow {opacity:0;}
+	
+	/* Colors */
+	.black {background-color:black; border:hidden; background-repeat: repeat-x;}
+	.white {background-color:white; border:hidden; background-repeat: repeat-x;}
+
+	/* Back Button */
+	.back {
+		position:absolute;
+		z-index:-1;
+		font-size:60px;
+		opacity:0;
+	    border-radius:50%;
+	    width:20%;
+	}
+	.back.black {
+		left:5%;
+		top:40%;
+	}
+	.white.back {
+		right:5%;
+		top:43%;
+	}
+
+
+	/* Slide CSS */
+	.slide {
+		position:absolute;
+		width:20%;
+		height:100%; //Set to be #yinyangwrap height in app.js
+		opacity:0;
+		-webkit-transition: 1s ease-out;
+	    -moz-transition: 1s ease-out;
+	    -o-transition: 1s ease-out;
+	    transition: 1s ease-out;
+		a {padding-top:3px;}
+		a:hover, a:active {text-decoration:underline;}
+		a.icon {width:8%;}
+		a.icon img {border-radius:25%;width:100%;}
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.blackSlide {
+		left:20%;
+		text-align:right;
+		color:white;
+		a.icon {float:right; padding-left:2%;}
+		a.icon img {background-color:#a6a6a6;}
+		a.icon:hover img {background-color:#464646;}
+	}
+	.whiteSlide {
+		right:20%;
+		text-align:left;
+		color:black;
+		.bg {background-color:white; height:100%; border-radius:10%;}
+		a.icon {float:left; padding-right:2%}
+		a.icon img {background-color:#464646;}
+		a.icon:hover img {background-color:#a6a6a6;}
+	}
+
+	.slideContentWrap {
+		width:100%;
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	/* Overall Content Link CSS */
+	.slideContentWrap.fly {
+		overflow-y:hidden;
+		min-width:1240px;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		display:none;
+		a {height:100%; width:100%;}
+		img {width:100%;}
+	}
+
+	/* Content on click CSS */
+	#contentWrap .textWrap.active {
+		z-index:4;
+		opacity:1;
+	    a:hover, a:active {text-decoration:underline;}
+	}
+	.textWrap.fly.active {
+		z-index:5;
+		display:block;
+	}
+}
+
+
+
+
+/* Yin Yang Hover Effects */
+#wrap.blackHover {
+	/* Yin Yang CSS */
+	.black {background:url('images/Black.png');}
+	.blackHoverHide {opacity:0;}
+	.blackHoverShow {opacity:1;}
+}
+#wrap.whiteHover {
+	/* Yin Yang CSS */
+	.white {background:url('images/White.png');}
+	.whiteHoverHide {opacity:0;}
+	.whiteHoverShow {opacity:1;}
+}
+#wrap.blackHover.blackBack {
+	.black.back {opacity:1; z-index:6;}
+	.black {background:darkgray;}
+}
+#wrap.whiteHover.whiteBack {
+	.white.back {opacity:1; z-index:6;}
+	.white {background:lightgray;}
+}
+
+
+/* Yin Yang Click Effects */
+#wrap.blackClick {
+	/* Background and Title CSS */
+	.background.blackBG {opacity:1;}
+	#title.fontHeader {color:black;}
+	#title.fontHeader .bg {background-color:white;}
+
+	/* Yin Yang CSS */
+	#yinyangWrap {left:15%;}
+	.black {background:black;}
+	.blackHoverHide {opacity:1;}
+	.blackHoverShow {opacity:0;}
+
+	/* Slide CSS */
+	.blackSlide {opacity:1;}
+}
+#wrap.whiteClick {
+	/* Background and Title CSS */
+	.background.whiteBG {opacity:1;}
+	#title.fontHeader {color:black;}
+	#title.fontHeader .bg {background-color:white;}
+
+	/* Yin Yang CSS */
+	#yinyangWrap {left:-15%;}
+	.white {background:white;}
+	.whiteHoverHide {opacity:1;}
+	.whiteHoverShow {opacity:0;}
+
+	/* Slide CSS */
+	.whiteSlide {opacity:1;}
+}
+#wrap.blackClick.hideLinks {
+	.blackLinks {left: 50%;}
+}
+#wrap.whiteClick.hideLinks {
+	.whiteLinks {right:50%;}
+}
