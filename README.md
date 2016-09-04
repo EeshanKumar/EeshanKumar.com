@@ -18,3 +18,18 @@ Creat
 - Number audible altimeter (Beep frequency)
 
 Add a link to myFResume at the bottom of the black slide. It should just save a pdf (or open it in another window). 
+
+Colson Changes:
+Font Line Height Increase
+Increase the space underneath the title
+Play with making the title lowercase
+
+Ask for his thoughts about adding my resume to my site?
+
+Craig Mod — Homepage (http://craigmod.com/)
+
+Here are some link styles that fall in line with our discussion from last night:
+
+see the donate and take action buttons in the upper right hand corner
+
+see the nav on the right hand side
