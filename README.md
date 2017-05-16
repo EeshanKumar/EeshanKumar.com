@@ -1,7 +1,7 @@
 Fall/Fly 
 - Gif
 - Last updated 4/1/2015 (or written out but in italics)
-- # of jumps
+- \# of jumps
 - Vehicles jumped out of: Helicopter, Hot Air balloon, Cessna C'182, Caravan, Twin Otter, DC180, skyvan
 - Locations jumped: Snohomish (Home drop zone), Skydive Kapowsin, Skydive Arizona, Skydive Chelan
 
